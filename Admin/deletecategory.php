@@ -14,9 +14,6 @@
 	<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-
-
 	<script type="application/x-javascript">
 		addEventListener("load", function() {
 			setTimeout(hideURLbar, 0);
@@ -59,10 +56,6 @@
 		</div>
 		<div>
 
-
-
-
-
 			<form method="post">
 				<table border="0" style="border-color:dimgray;" width="400px" height="200px" align="center" class="tableshadow">
 					<tr>
@@ -82,12 +75,9 @@
 
 							while ($data = mysqli_fetch_array($result)) {
 
-								echo "<option value=$data[0]>$data[0]</option>";
+								echo "<option value=$data[0]>$data[1]</option>";
 							}
 							mysqli_close($cn);
-
-
-
 							?>
 
 							</select>

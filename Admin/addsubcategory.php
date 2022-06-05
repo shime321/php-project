@@ -15,9 +15,6 @@
 	<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-
-
 	<script type="application/x-javascript">
 		addEventListener("load", function() {
 			setTimeout(hideURLbar, 0);
@@ -51,9 +48,6 @@
 		</div>
 		<div>
 
-
-
-
 			<form method="post" enctype="multipart/form-data">
 				<table border="0" width="400px" height="300px" align="center" class="tableshadow" style="border-color: darkgray;">
 					<tr>
@@ -76,7 +70,6 @@
 							//echo $r;
 
 							while ($data = mysqli_fetch_array($result)) {
-
 								echo "<option value=$data[0]>$data[1]</option>";
 							}
 							?>
@@ -107,36 +100,29 @@
 		$imagefiletype = pathinfo($target_file, PATHINFO_EXTENSION);
 		//check if image file is a actual image or fake image
 		$check = getimagesize($_FILES["t3"]["tmp_name"]);
-		if ($check !== false) {
-			echo "file is an image - " . $check["mime"] . ".";
-			$uploadok = 1;
-		} else {
+		if ($check === false) {
 			echo "file is not an image.";
 			$uploadok = 0;
 		}
 
-
 		//check if file already exists
 		if (file_exists($target_file)) {
-			echo "sorry,file already exists.";
+			echo "Sorry, the file already exists.";
 			$uploadok = 0;
 		}
 
 		//check file size
 		if ($_FILES["t3"]["size"] > 500000) {
-			echo "sorry, your file is too large.";
+			echo "Sorry, your file is too large.";
 			$uploadok = 0;
 		}
 
-
 		//aloow certain file formats
 		if ($imagefiletype != "jpg" && $imagefiletype != "png" && $imagefiletype != "jpeg" && $imagefileype != "gif") {
-			echo "sorry, only jpg, jpeg, Png & gif files are allowed.";
+			echo "Sorry, only jpg, jpeg, png & gif files are allowed.";
 			$uploadok = 0;
 		} else {
 			if (move_uploaded_file($_FILES["t3"]["tmp_name"], $target_file)) {
-
-
 
 				$s = "insert into subcategory(Subcatname,Catid,pic,detail) values('" . $_POST["t1"] . "','" . $_POST["t2"] . "','" . basename($_FILES["t3"]["name"]) . "','" . $_POST["t4"] . "')";
 				mysqli_query($cn, $s);

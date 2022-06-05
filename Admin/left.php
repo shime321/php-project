@@ -7,7 +7,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
+
     <title></title>
     <style>
         @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
@@ -22,7 +22,9 @@
             #wrapper,
             #page-wrapper {
                 height: 100%;
-                overflow: hidden;
+                overflow-x: hidden;
+                overflow-y: visible;
+                padding-bottom: 40px;
             }
         }
 

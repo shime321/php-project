@@ -59,10 +59,6 @@
 		</div>
 		<div>
 
-
-
-
-
 			<form method="post">
 				<table border="0" width="400px" height="300px" align="center" style="border-color:dimgray;" class="tableshadow">
 					<tr>
@@ -72,8 +68,6 @@
 						<td class="lefttxt" style="color: dimgray; padding-left:5px; ">Selected Category Name</td>
 						<td><select name="t1" required />
 							<option value="">Select</option>
-
-
 
 							<?php
 							$cn = makeconnection();
@@ -90,9 +84,6 @@
 								}
 							}
 							mysqli_close($cn);
-
-
-
 							?>
 
 							</select>
@@ -109,10 +100,8 @@
 								$Cat_id = $data[0];
 								$Cat_name = $data[1];
 
-
 								mysqli_close($cn);
 							}
-
 							?>
 
 						</td>
@@ -121,7 +110,7 @@
 						<td class="lefttxt" style="color: dimgray; ">Category Name</td>
 						<td><input type="text" value="<?php if (isset($_POST["show"])) {
 															echo $Cat_name;
-														} ?>" name="t2" required pattern="[a-zA-z _]{3,10}" title"Please Enter Only Characters between 3 to 10 for Category Name" /></td>
+														} ?>" name="t2" /></td>
 					</tr>
 
 					<tr>
