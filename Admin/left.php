@@ -60,7 +60,7 @@
         }
 
         .top-nav>li {
-            display: inline-block;
+            display: block;
             float: left;
         }
 

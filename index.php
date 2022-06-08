@@ -154,7 +154,7 @@
 						<form method="post">
 							<table border="0" width="700px" height="500px">
 								<tr>
-									<td align="left"> <input type="text" class="text" value=" Name" name="t1" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Your Name';}" required pattern="[a-zA-z1 _]{1,50}" title"Please Enter Only Characters and numbers between 1 to 50 for Name"></td>
+									<td align="left"> <input type="text" class="text" value=" Name" name="t1" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Your Name';}" title"Please Enter Only Characters and numbers between 1 to 50 for Name"></td>
 								</tr>
 								<tr>
 									<td align="left"><input type="text" class="text" value=" Contact No" name="t2" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Your Contact NO';}" required pattern="[0-9]{10,12}" title"Please Enter Only numbers between 10 to 12 for Contact no"></td>
@@ -163,7 +163,7 @@
 									<td align="left"> <input type="text" class="text" value="Email" name="t3" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Your mail';}" required></td>
 								</tr>
 								<tr>
-									<td><textarea onFocus="if(this.value == 'Message') this.value='';" name="t4" onBlur="if(this.value == '') this.value='Enter Message Here';" required/>Message</textarea></td>
+									<td><textarea class="text" onFocus="this.value = '';" name="t4" onBlur="if(this.value == '') this.value='Enter Message Here';" required />Message</textarea></td>
 								</tr>
 								<tr>
 									<td><input type="submit" value="Send message" name="sbmt"></td>

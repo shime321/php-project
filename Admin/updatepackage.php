@@ -14,9 +14,6 @@
 	<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-
-
 	<script type="application/x-javascript">
 		addEventListener("load", function() {
 			setTimeout(hideURLbar, 0);
@@ -41,7 +38,6 @@
 	}
 	?>
 
-
 	<?php include('function.php'); ?>
 
 	<?php
@@ -57,30 +53,19 @@
 		$uploadok = 1;
 		$imagefiletype = pathinfo($target_file, PATHINFO_EXTENSION);
 
-
-
-
 		if (move_uploaded_file($_FILES["t4"]["tmp_name"], $target_file)) {
 			$f1 = 1;
 		}
-
 
 		//t5
 		$target_file = $target_dir . basename($_FILES["t5"]["name"]);
 		$uploadok = 1;
 		$imagefiletype = pathinfo($target_file, PATHINFO_EXTENSION);
 
-
-
-
-
 		//t6
 		$target_file = $target_dir . basename($_FILES["t6"]["name"]);
 		$uploadok = 1;
 		$imagefiletype = pathinfo($target_file, PATHINFO_EXTENSION);
-
-
-
 
 		//check file size
 		if ($_FILES["t6"]["size"] > 500000) {
@@ -145,7 +130,6 @@
 							mysqli_close($cn);
 
 
-
 							?>
 
 							</select>
@@ -181,7 +165,7 @@
 						<td class="lefttxt" style="color: dimgray; ">Package Name</td>
 						<td><input type="text" value="<?php if (isset($_POST["show"])) {
 															echo $Packname;
-														} ?> " name="t1" required pattern="[a-zA-z _]{1,50}" title"Please Enter Only Characters between 1 to 50 for Package Name" /></td>
+														} ?> " name="t1" required pattern="[a-z A-z ]{1,50}" title"Please Enter Only Characters between 1 to 50 for Package Name" /></td>
 					</tr>
 					<tr>
 						<td class="lefttxt" style="color: dimgray; ">Select Category</td>
@@ -204,8 +188,6 @@
 								}
 							}
 							mysqli_close($cn);
-
-
 
 							?>
 
@@ -232,8 +214,6 @@
 								}
 							}
 							mysqli_close($cn);
-
-
 
 							?>
 

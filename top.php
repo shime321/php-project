@@ -3,11 +3,11 @@
 	 	<div class="container">
 	 		<div class="top-nav">
 	 			<div class="logo">
-	 				<a href="#"><img src="images/" id="section-1" class="img-responsive" alt="" /></a>
+	 				<a href="#"><img src="images/logos/2.jpg" style="width:100px; height:40px; border-radius: 20%;" id="section-1" class="img-responsive" alt="" /></a>
 	 			</div>
 	 			<div class="menu">
 	 				<ul id="nav">
-	 					<li><a href="index.php#section-1" onclick="javascript:window.open('index.php#section-1','_self')"> Home</a></li>
+	 					<li><a href="index.php" onclick="javascript:window.open('index.php#','_self')"> Home</a></li>
 	 					<li><a href="index.php#section-2" onclick="javascript:window.open('index.php#section-2','_self')"> About</a></li>
 	 					<li><a href="index.php#section-3" onclick="javascript:window.open('index.php#section-3','_self')"> Gallery</a></li>
 

@@ -14,9 +14,6 @@
 	<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-
-
 	<script type="application/x-javascript">
 		addEventListener("load", function() {
 			setTimeout(hideURLbar, 0);
@@ -40,7 +37,6 @@
 		header("location:loginform.php");
 	}
 	?>
-
 
 	<?php include('function.php'); ?>
 	<?php

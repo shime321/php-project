@@ -9,7 +9,8 @@
 				<div class="col-md-4 fotter-right" style="padding-left:10px">
 
 					<div class="footer-list">
-						<h3 class="">Trip it! 2022 </h3><br />
+						<img src="images/logos/3.jpg" style="width:150px ; height:70px; border-radius: 20%;" alt="logo">
+						<br />
 					</div>
 				</div>
 				<div class="clearfix"></div>
